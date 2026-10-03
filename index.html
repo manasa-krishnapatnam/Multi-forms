@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+            padding: 30px;
+        }
+
+        .form-container {
+            width: 550px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            text-align: center;
+            color: #6a1b9a;
+        }
+
+        fieldset {
+            border: 2px solid #9575cd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            background-color: #9575cd;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        .option {
+            display: inline-block;
+            margin-right: 20px;
+            font-weight: normal;
+        }
+
+        .option input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: #7e57c2;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5e35b1;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <h2>🎓 Course Registration Form</h2>
+
+    <form>
+
+        <!-- Personal Information -->
+        <fieldset>
+
+            <legend>Personal Information</legend>
+
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your full name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="Enter your phone number">
+
+            <label>Date of Birth:</label>
+            <input type="date">
+
+            <label>Gender:</label>
+
+            <label class="option">
+                <input type="radio" name="gender">
+                Male
+            </label>
+
+            <label class="option">
+                <input type="radio" name="gender">
+                Female
+            </label>
+
+            <label class="option">
+                <input type="radio" name="gender">
+                Other
+            </label>
+
+        </fieldset>
+
+
+        <!-- Course Information -->
+        <fieldset>
+
+            <legend>Course Information</legend>
+
+            <label>Select Course:</label>
+
+            <select>
+                <option>Select a course</option>
+                <option>Java Full Stack</option>
+                <option>Python Full Stack</option>
+                <option>Web Development</option>
+                <option>Data Science</option>
+                <option>Cloud Computing</option>
+            </select>
+
+
+            <label>Preferred Skills:</label>
+
+            <label class="option">
+                <input type="checkbox" name="skills" value="java">
+                Java
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="skills" value="html">
+                HTML
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="skills" value="css">
+                CSS
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="skills" value="sql">
+                SQL
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="skills" value="javascript">
+                JavaScript
+            </label>
+
+        </fieldset>
+
+
+        <!-- Education Information -->
+        <fieldset>
+
+            <legend>Education Information</legend>
+
+            <label>Qualification:</label>
+
+            <select>
+                <option>Select Qualification</option>
+                <option>10th</option>
+                <option>Intermediate</option>
+                <option>Diploma</option>
+                <option>B.Tech</option>
+                <option>M.Tech</option>
+            </select>
+
+            <label>Address:</label>
+
+            <textarea rows="4"
+                placeholder="Enter your address"></textarea>
+
+        </fieldset>
+
+
+        <!-- Documents -->
+        <fieldset>
+
+            <legend>Documents</legend>
+
+            <label>Upload Photo:</label>
+            <input type="file">
+
+            <label>Upload Resume:</label>
+            <input type="file">
+
+        </fieldset>
+
+
+        <!-- Terms and Conditions -->
+        <fieldset>
+
+            <legend>Confirmation</legend>
+
+            <label class="option">
+                <input type="checkbox">
+                I agree to the terms and conditions
+            </label>
+
+        </fieldset>
+
+
+        <button type="submit">Register Now</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
